@@ -3,6 +3,11 @@
 body {
   background: #e8cb4e;
 }
+ul {
+  list-style-type: none;
+  font-size: 20px;
+}
+
 
 h1, h2 {
   color:#2BA061;
