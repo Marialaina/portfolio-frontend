@@ -8,11 +8,14 @@ import { Route, Switch } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import Work from "./pages/Work";
+// import './assets/css/fonts.css'
 
 const App = () => {
     const URL = "https://full-stack-portfolio-mp.herokuapp.com/";
 
     return (
+        <div className="Maindiv">
         <div className="App">
             <Header />
             <Switch>
@@ -25,8 +28,14 @@ const App = () => {
             <Route path="/about">
                 <About URL={URL} />
             </Route>
+            <Route path="/work">
+                <Work URL={URL} />
+            </Route>
             </Switch>
             <Footer />
+            
+        </div>
+       
         </div>
     );
 }
